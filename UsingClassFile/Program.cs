@@ -15,45 +15,68 @@ namespace UsingClassFile
     {
     }
 
-    public class MyClass { public int qwerty = 0;   public void MC() { if (qwerty == 0) { throw new SpecialExeption(); } } }
+    public class MyClass { public int qwerty = 0; public void MC ( ) { if ( qwerty == 0 ) { throw new SpecialExeption ( ); } } }
 
-    public class One 
-    { 
-       private class Two { public int aaa = 0;  public void func ( ) { Console . Write ( "two" ); } } 
-       
-       public void function() 
-       {
+    public class One
+    {
+        private class Two { public int aaa = 0; public void func ( ) { Console . Write ( "two" ); } }
+
+        public void function ( )
+        {
             var a = new Two ( );
-       
-         Console.Write( a.GetType().FullName );   Console . ReadKey ( );
-       } 
+
+            Console . Write ( a . GetType ( ) . FullName ); Console . ReadKey ( );
+        }
     }
 
-    
 
-    public interface IX { void X(int a); int Y(); }
 
-    public interface IY { void X(int a); int Z(); }
+    public interface IX { void X ( int a ); int Y ( ); }
 
-    public interface IZ : IY { void ZYX(double a); int ZY();  void X(double a); }
+    public interface IY { void X ( int a ); int Z ( ); }
+
+    public interface IZ : IY { void ZYX ( double a ); int ZY ( ); void X ( double a ); }
 
     public class XY : IX, IZ
     {
-        public void X(int a) { Console.Write("one"); }
+        public void X ( int a ) { Console . Write ( "one" ); }
 
-        public void X(double a) { Console.Write("one"); }
+        public void X ( double a ) { Console . Write ( "one" ); }
 
-        public void ZYX(double a) { Console.Write("one"); }
+        public void ZYX ( double a ) { Console . Write ( "one" ); }
 
-        public int ZY() { Console.Write("one"); return 0; }
+        public int ZY ( ) { Console . Write ( "one" ); return 0; }
 
-        public int Y() { Console.Write("one"); return 0; }
+        public int Y ( ) { Console . Write ( "one" ); return 0; }
 
-        public int Z() { Console.Write("one"); return 0; }
+        public int Z ( ) { Console . Write ( "one" ); return 0; }
 
     }
 
-    
+
+
+    abstract class abstr_class
+    {
+        public abstract void mbr_1 ( );
+
+        public virtual void mbr_2 ( ) { int a = 3; int b = 5; int c = a + b; }
+    }
+
+    class my_class : abstr_class
+    {
+        public override void mbr_1 ( )
+        {
+            throw new NotImplementedException ( );
+        }
+
+        public override void mbr_2 ( )
+        {
+            int a = 3; int b = 5; int c = a + b + a;
+        }
+    }
+
+
+
 
 
     class Program
