@@ -86,11 +86,11 @@ namespace UsingClassFile
     {
        var en = Encoding.UTF8; var count = 0;
 
-            /*  using (var new_wrt = new BinaryWriter(File.Open("similar_real.dat", FileMode.OpenOrCreate), Encoding.UTF8))
+             using (var new_wrt = new BinaryWriter(File.Open("similar_real.dat", FileMode.OpenOrCreate), Encoding.UTF8))
               {
                   int a_0 = 4; int a_1 = 3; int a_2 = 3; int a_3 = 3; int a_4 = 3;
                   new_wrt.Write(a_0); new_wrt.Write(a_1); new_wrt.Write(a_2); new_wrt.Write(a_3); new_wrt.Write(a_4); 
-              }*/
+              }
             //      var str = ""; var fs = new FileStream("similar_real.dat", FileMode.Open); fs.Position = 0; str = fs.Position.ToString(); byte bt = 109;
             //        fs.WriteByte(bt); str += fs.Position.ToString();  Console.Write(fs.Length.ToString()); Console.Write(str);
             //      Console.ReadKey();  fs.Close();
