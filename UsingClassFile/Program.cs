@@ -84,7 +84,7 @@ namespace UsingClassFile
 
     static void Main(string[] args)
     {
-       var en = Encoding.UTF8; var count = 0;
+       var en = Encoding.UTF8; var count = 0; var str = "changes in master brench";
 
             /*  using (var new_wrt = new BinaryWriter(File.Open("similar_real.dat", FileMode.OpenOrCreate), Encoding.UTF8))
               {
