@@ -90,8 +90,12 @@ namespace UsingClassFile
             var tdp_2 = "tdp_2";
 
 
+            var tdp_4 = "tdp_4";
 
-       var en = Encoding.UTF8; var count = 0; var str = "changes in master brench";   var str2 = "new change in master brench";
+
+
+
+            var en = Encoding.UTF8; var count = 0; var str = "changes in master brench";   var str2 = "new change in master brench";
 
              using (var new_wrt = new BinaryWriter(File.Open("similar_real.dat", FileMode.OpenOrCreate), Encoding.UTF8))
               {
