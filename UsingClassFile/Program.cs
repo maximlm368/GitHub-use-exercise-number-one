@@ -89,6 +89,9 @@ namespace UsingClassFile
 
             var tdp_2 = "qwerty";
 
+            var tdp_3 = "ytrewq";
+
+            var tdp_4 = "qwertytrewq";
             var tdp_5 = "ytrewqwerty";
 
 
