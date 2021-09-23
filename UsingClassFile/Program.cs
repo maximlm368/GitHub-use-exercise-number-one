@@ -88,7 +88,6 @@ namespace UsingClassFile
 
 
             var tdp_2 = "tdp-2";
-            var tdp_3 = "tdp-3";
 
 
 
