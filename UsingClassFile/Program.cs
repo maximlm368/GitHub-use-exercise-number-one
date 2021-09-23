@@ -93,9 +93,6 @@ namespace UsingClassFile
             var tdp_3 = "tdp_3";
 
 
-            var tdp_4 = "tdp_4";
-
-
 
 
             var en = Encoding.UTF8; var count = 0; var str = "changes in master brench";   var str2 = "new change in master brench";
